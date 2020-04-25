@@ -39,6 +39,21 @@
         "tuple": "cpp",
         "__functional_03": "cpp",
         "random": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "__debug": "cpp",
+        "__mutex_base": "cpp",
+        "__node_handle": "cpp",
+        "algorithm": "cpp",
+        "exception": "cpp",
+        "ios": "cpp",
+        "map": "cpp",
+        "mutex": "cpp",
+        "optional": "cpp",
+        "queue": "cpp",
+        "regex": "cpp",
+        "shared_mutex": "cpp",
+        "stack": "cpp",
+        "utility": "cpp",
+        "condition_variable": "cpp"
     }
 }
