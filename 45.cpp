@@ -18,17 +18,17 @@ public:
    void push(value_type const & value)
    {
       data.push_back(value);
-      std::push_heap(std::begin(data), std::end(data), comparer);
+      std::push_heap(std::begin(data), std::end(data), comparer);//ヒープを再生成
    }
 
    void pop()
    {
       //範囲内の最初と最後の要素を入れ替え、最終要素を使用せずにヒープをコレクションに戻す
-      std::pop_heap(std::begin(data), std::end(data), comparer);
+      std::pop_heap(std::begin(data), std::end(data), comparer);//ヒープを再生成
       data.pop_back();
    }
 
-   const_reference top() const { return data.front(); }
+   const_reference top() const { return data.front(); }//vectorの要素の型を返す
 
    void swap(priority_queue& other) noexcept
    {
@@ -54,7 +54,7 @@ int main()
    priority_queue<int> q;
    for (int i : {1, 5, 3, 1, 13, 21, 8})
    {
-      q.push(i);//プッシュする度にヒープを作る
+      q.push(i);//１つプッシュする度にヒープを作る
    }
 
    assert(!q.empty());
